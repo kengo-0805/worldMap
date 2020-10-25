@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html　lang='ja'>
+<html lang='ja'>
   <head>
     <meta charset="UTF-8">
-    <title>COVID-19 World Map</title>
+    <title>COVID-19 World Map - worldMap</title>
     <link rel="stylesheet" href"http://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
 <!-- ファビコンの記述（なぜか反映されない） -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,47 +19,82 @@
 
   <header class="page-header wrapper">
     <h1><a href="index.html"><img class="logo" src="images/covid19.jpg" alt="worldmapホーム"></a></h1>
-    <a>各国の新型コロナウイルス（COVID-19）感染者数</a>
     <nav>
       <ul class="main-nav">
         <li><a href="#">世界地図</a></li>
         <li><a href="#">円グラフ</a></li>
         <li><a href="#">棒グラフ</a></li>
+        <li><a href="#">ホテル</a></li>
       </ul>
     </nav>
   </header>
-  <div class = "coronacorona wrapper">
-      <h2 class="page title">ころなころな</h2>
-      <p>コロナが流行ってるです</p>
-      <a class="button" href="hoge.html">hogeがある</a>
-  </div>
+
 <main>
-  <article>
-    <h2>記事タイトル</h2>
-    <p>内容</p>
-    <p>ここで世界地図上に感染者数を表示</p>
-  </article>
 
-  <body>
+  <div class="wrapper">
+    <h2 class="page-title">World Map</h2>
+  </div><!-- /.wrapper -->
+  
+  <div class = "news-contents wrapper">
+    <article>
+      <header class = "post-info">
+        <h2 class = "post-title">本日の感染者数</h2>
+        <p class = "post-date">10/20<span>2020</span></p>
+        <p class = "post-cat">カテゴリー:感染者数</p>
+      </header>
+      <p>
+        今日もどこかに感染者がいるはず．気をつけよう！！
+      </p>
+
+      <section id="location">
+        <div class="wrapper">
+          <div class="information">
+            <h3 class="sub-title">パリ</h3>
+            <p>
+              住所：フランス共和国パリ市<br>
+            </p>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9474013623!2d2.2768483830061506!3d48.85883763514743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sjp!4v1603651390717!5m2!1sen!2sjp" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </section>
+    </article>
+
+    <aside>
+      <h3 class = "sub-title">ホテル</h3>
+      <ul class = "sub-menu">
+        <li><a href="https://www.princehotels.co.jp/parktower/" >プリンス・ザ・パークタワー東京</a></li>
+        <li><a href="https://www.marriott.co.jp/hotels/travel/tyosi-sheraton-grande-tokyo-bay-hotel/">シェラトン・グランデ・東京ベイ</a></li>
+        <li><a href="https://www.princehotels.co.jp/kioicho/">ザ・プリンスギャラリー紀尾井町</a> </li>
+      </ul>
+
+      <h3 class = "sub-title">このページについて</h3>
+      <p>感染者もしくは各国のサッカーの試合結果を案内します．たぶん</p>
+    </aside>
+
+
     
-    <h2>世界地図</h2>
-    <style>
-      /* h1 {color:aqua;} */
-    </style>
-    <p>ここにHTMLの文章などが入ります</p>
-    <script type="text/javascript" src="worldMap.js"></script>
-  </body>
-</main>
 
-  <aside>
-    <h3>サイドにでてくる？</h3>
-  </aside>
+    <!-- <body>
+      <style>
+        /* h1 {color:aqua;} */
+      </style>
+      <p>ここにHTMLの文章などが入ります</p>
+      <script type="text/javascript" src="worldMap.js"></script>
+    </body>
 
-  <footer>
     <ul>
       <li><a href="#">Facebook</a></li>
       <li><a href="#">Twitter</a></li>
-    </ul>
-    <p>Copyright 2020 名前</p>
+    </ul> -->
+
+    
+</main>
+
+
+  <footer>
+    <p><small>&copy; 2020 Designed by Apple in California</small></p>
+    <p><small>Assembled in China</small></p>
   </footer>
 </html>
